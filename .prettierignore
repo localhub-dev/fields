@@ -1,0 +1,10 @@
+# Ignore everything (sorry Stefen)
+*
+
+# A fallback to make sure it's ignoring the most common file types
+*.htm
+*.html
+*.css
+*.scss
+*.js
+*.json

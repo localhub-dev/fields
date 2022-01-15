@@ -1,0 +1,36 @@
+{
+  "name": "@localhub/fields",
+  "description": "Easily create and modularize your HubSpot module and theme fields locally.",
+  "version": "0.0.4",
+  "license": "MIT",
+  "homepage": "https://localhub.dev",
+  "author": "Dustin Perolio <dustin@dperolio.com> (https://dperolio.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localhub-dev/fields.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/localhub-dev/fields/issues"
+  },
+  "main": "./src/index.js",
+  "keywords": [
+    "hubspot",
+    "local",
+    "cli",
+    "development",
+    "module",
+    "fields",
+    "theme"
+  ],
+  "scripts": {
+    "pub": "npm version patch --force && npm publish"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  }
+}
