@@ -1,4 +1,4 @@
-import { lowerCase, upperFirst } from 'lodash-es';
+import { lowerCase, upperFirst, snakeCase } from 'lodash-es';
 import { v4 as uuidv4 } from 'uuid';
 
 export default {

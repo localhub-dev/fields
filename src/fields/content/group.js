@@ -1,4 +1,4 @@
-import Util from '../../util.js';
+import Util from '../../utils.js';
 import Field from '../field.js';
 
 export default class Group extends Field {
@@ -52,3 +52,5 @@ export default class Group extends Field {
     this.default = {};
   }
 }
+
+console.log(new Group())

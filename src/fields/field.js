@@ -1,4 +1,4 @@
-import Util from '../util.js';
+import Util from '../utils.js';
 
 /**
  * The data for a field.
