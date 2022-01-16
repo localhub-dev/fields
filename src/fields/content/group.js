@@ -14,15 +14,7 @@ export default class Group extends Field {
    * @param {boolean} [data.expanded=false] Whether the group should be expanded by default
    * @param {object} [data.default={}] Default values
    */
-  constructor (data = {
-    label: 'Field group',
-    required: false,
-    locked: false,
-    children: [],
-    tab: 'content',
-    expanded: false,
-    default: {}
-  }) {
+  constructor (data) {
     super(data);
 
     /**
@@ -33,24 +25,28 @@ export default class Group extends Field {
      */
     this.display_width = null;
 
-    this.label = data.label;
+    /**
+     * @readonly
+     * @private
+     */
+    this.type = 'group';
+
+    this.label = data.label || 'Field group';
     this.name = data.name || Util.toSnakeCase(this.label) || 'field_group';
-    this.children = data.children;
+    this.children = data.children || [];
 
     /**
      * Make sure the tab value resolves to "CONTENT" or "STYLE", otherwise override
      * it to "CONTENT."
      */
     this.tab = [ 'CONTENT', 'STYLE' ].includes(data.tab?.toUpperCase()) ? data.tab.toUpperCase() : 'CONTENT';
-    this.expanded = Boolean(data.expanded);
 
-    /**
-     * @readonly
-     * @private
-     */
-    this.type = 'group';
+    this.locked = !!data.locked;
+    this.required = !!data.required;
+    this.expanded = !!data.expanded;
+    
     this.default = {};
   }
 }
 
-console.log(new Group())
+console.log(new Group({ children: [] }))
