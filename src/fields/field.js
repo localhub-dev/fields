@@ -33,6 +33,7 @@ export default class Field {
    * that field is also set to "half_width".
    */
   constructor (data = {}) {
+    Object.assign(this, data);
     this.help_text = data.help_text;
     this.id = data.id;
     this.inline_help_text = data.inline_help_text;

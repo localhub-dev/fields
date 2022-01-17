@@ -10,6 +10,8 @@ export default class Number extends Field {
    * @see {@link https://developers.hubspot.com/en/docs/cms/building-blocks/module-theme-fields#number}
    * @param {object} data The JSON data used to generate the field.
    * @param {number|null} [data.default=null] A default number to be used.
+   * @param {'slider'|undefined} [data.display] If set to "slider", displays a number
+   * slider below the input.
    * @param {number} [data.min] The maximum value of the input.
    * @param {number} [data.max] The minimum value of the input.
    * @param {string} [data.prefix] Added as a prefix to the number field. Note: Using the
