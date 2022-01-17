@@ -34,6 +34,6 @@ export function toSnakeCase (string) {
 /**
  * Create a new UUID (v4).
  */
-export function getRandomId () {
+export function generateRandomId () {
   return uuidv4();
 }
