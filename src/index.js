@@ -1,5 +1,7 @@
 import Field from './fields/field.js';
 
+// @todo Handle JSDoc documentation of subproperties for all fields that have object properties.
+
 /**
  * Content field imports
  */
@@ -151,3 +153,46 @@ export default {
   Spacing,
   TextAlignment
 };
+
+/**
+ * Testing intellisense
+ */
+// new Field();
+// new Group();
+// new Blog();
+// new Boolean();
+// new Choice();
+// new Color();
+// new CRMObject();
+// new CTA();
+// new Date();
+// new DateTime();
+// new Email();
+// new Embed();
+// new File();
+// new FollowUpEmail();
+// new Font();
+// new Form();
+// new HubDBRow();
+// new HubDBTable();
+// new Icon();
+// new Image();
+// new Link();
+// new Logo();
+// new Meeting();
+// new Menu();
+// new Number();
+// new Page();
+// new Payment();
+// new RichText();
+// new SimpleMenu();
+// new Tag();
+// new Text();
+// new URL();
+// new Video();
+// new Alignment();
+// new BackgroundImage();
+// new Border();
+// new Gradient();
+// new Spacing();
+// new TextAlignment();

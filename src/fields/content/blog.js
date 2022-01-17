@@ -9,3 +9,5 @@ export default class Blog extends Field {
     this.type = 'blog';
   }
 }
+
+// @todo
