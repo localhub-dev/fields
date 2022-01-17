@@ -1,6 +1,8 @@
 import Field from './fields/field.js';
 
 // @todo Handle JSDoc documentation of subproperties for all fields that have object properties.
+// @todo Change JSDoc stuff we changed from uppercase to lowercase, back to uppercase, but still
+// make those values case-insensitive (convert to uppercase in code like we have been)
 
 /**
  * Content field imports

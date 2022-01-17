@@ -55,7 +55,7 @@ export default class Icon extends Field {
      * convert them to uppercase ourself so they can be correctly processed by HubSpot.
      */
     if (this.default?.type) {
-      this.default.type = this.default.type?.toUpperCase?.(); 
+      this.default.type = this.default.type.toUpperCase?.(); 
     }
     
     /**

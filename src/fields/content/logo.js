@@ -8,7 +8,7 @@ export default class Logo extends Field {
    * that may contain the company logo. Logo fields are supported in modules.
    * @see {@link https://developers.hubspot.com/en/docs/cms/building-blocks/module-theme-fields#logo}
    * @param {object} data The JSON data used to generate the field.
-   * @param {object} [data.default={{ override_inherited_src: false, src: null, alt: null }}]
+   * @param {object} [data.default={override_inherited_src: false, src: null, alt: null}]
    * Logo object. // @todo Document subproperties
    * -------------------------------------------------------------------------------------
    * @param {string} [data.help_text] Text that will appear in the editor via tooltip to

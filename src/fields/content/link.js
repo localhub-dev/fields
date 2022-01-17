@@ -62,19 +62,13 @@ export default class Link extends Field {
     };
     
     /**
-     * Allow the user to enter lowercase array string values, and then automatically
-     * convert them to uppercase ourself so they can be correctly processed by HubSpot.
+     * Case-insensitize some property values.
      */
     this.supported_types = data.supported_types?.map(type => type.toUpperCase?.()) || [
       'EXTERNAL', 'CONTENT', 'FILE', 'EMAIL_ADDRESS', 'BLOG'
     ];
-
-    /**
-     * If a default URL type is provided, let's allow lowercase values and then automatically
-     * convert them to uppercase ourself so they can be correctly processed by HubSpot.
-     */
     if (this.default?.url?.type) {
-      this.default.url.type = this.default.url.type?.toUpperCase?.(); 
+      this.default.url.type = this.default.url.type.toUpperCase?.(); 
     }
 
     /**
