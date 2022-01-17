@@ -13,10 +13,10 @@ export default class Image extends Field {
    * best practices for accessibility.
    * @see {@link https://developers.hubspot.com/en/docs/cms/building-blocks/module-theme-fields#image}
    * @param {object} data The JSON data used to generate the field.
-   * @param {object} [data.default={}] Image object. // @todo
+   * @param {object} [data.default={}] Image object. // @todo Document subproperties
    * @param {boolean} [data.responsive=true] Determines if the image is to act responsively
    * or have a fixed height and width.
-   * @param {boolean} [data.resizable=true] // @todo
+   * @param {boolean} [data.resizable=true] // @todo Find out what this is
    * @param {boolean} [data.show_loading=false] Determines if the controls for choosing to
    * lazy load the image are shown in the page editor.
    * {@link https://developers.hubspot.com/docs/cms/guides/speed/lazy-loading}
@@ -61,7 +61,7 @@ export default class Image extends Field {
      * @readonly
      * @private
      */
-    this.type = 'icon';
+    this.type = 'image';
 
     /**
      * Manually defined names get priority. If no name is set, try to set it to the lower

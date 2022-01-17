@@ -9,7 +9,8 @@ export default class Color extends Field {
    * in both themes and modules. Color fields can be used as style fields.
    * @see {@link https://developers.hubspot.com/en/docs/cms/building-blocks/module-theme-fields#color}
    * @param {object} data The JSON data used to generate the field.
-   * @param {object} [data.default={color: null, opacity: null}] Sets the default selected value from the choice array.
+   * @param {object} [data.default={color: null, opacity: null}] Sets the default selected
+   * color and opacity. // @todo Document subproperties
    * -------------------------------------------------------------------------------------
    * @param {string} [data.help_text] Text that will appear in the editor via tooltip to
    * assist the content creator. Best used for information that is supplementary but not

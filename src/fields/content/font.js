@@ -13,9 +13,8 @@ export default class Font extends Field {
    * @see {@link https://developers.hubspot.com/en/docs/cms/building-blocks/module-theme-fields#font}
    * @see {@link https://fonts.google.com}
    * @param {object} data The JSON data used to generate the field.
-   * @param {object} [data.default={}]
-   * Font object with settings for size, sizing unit, color, and styles for bold, italic,
-   * and underline.
+   * @param {object} [data.default={}] Font object with settings for size, sizing unit,
+   * color, and styles for bold, italic, and underline. // @todo Document subproperties
    * @param {boolean} [data.load_external_fonts=true] HubSpot automatically loads the
    * selected web font to the page if the font is selected and referenced by HubL in a
    * stylesheet or in a module. Set this to false, if you are already loading the font to

@@ -12,7 +12,7 @@ export default class DateTime extends Field {
    * @param {timestamp|null} [data.default=null] The Unix Epoch timestamp for the date and
    * time you want to default to. Leave this null to allow the date and time picker to start
    * the content creator at the current date and time in the picker.
-   * @param {number} [data.step=30] // @todo
+   * @param {number} [data.step=30] // @todo Find out what this is
    * -------------------------------------------------------------------------------------
    * @param {string} [data.help_text] Text that will appear in the editor via tooltip to
    * assist the content creator. Best used for information that is supplementary but not

@@ -1,6 +1,7 @@
 import Util from '../../utils.js';
 import Field from '../field.js';
 
+// @todo Implement this
 export default class Blog extends Field {
   constructor (data = {}) {
     super(data);
@@ -9,5 +10,3 @@ export default class Blog extends Field {
     this.type = 'blog';
   }
 }
-
-// @todo

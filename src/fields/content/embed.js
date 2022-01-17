@@ -21,7 +21,7 @@ export default class Embed extends Field {
    * Note: This param will also be populated when installing a Media Bridge Provider Application.
    * @param {object} [data.default={source_type: 'oembed'}] An array containing the
    * "source_type" parameter. This parameter has one string based value from the options
-   * provided in the "supported_source_types" parameter.
+   * provided in the "supported_source_types" parameter. // @todo Document subproperties
    * -------------------------------------------------------------------------------------
    * @param {string} [data.help_text] Text that will appear in the editor via tooltip to
    * assist the content creator. Best used for information that is supplementary but not
