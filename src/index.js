@@ -199,4 +199,4 @@ export default {
 // new Spacing();
 // new TextAlignment();
 
-//test
+//tests
