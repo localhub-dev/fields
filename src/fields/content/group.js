@@ -1,5 +1,6 @@
 import Util from '../../utils.js';
 import Field from '../field.js';
+import Text from './text.js';
 
 export default class Group extends Field {
   /**
@@ -13,7 +14,7 @@ export default class Group extends Field {
    * properties as shown in the example code above. Field groups are not expanded by
    * default and when using nested field groups, the parent group cannot make use of this
    * property.
-   * @param {('content'|'style')} [data.tab='content'] The tab that the field should appear
+   * @param {('CONTENT'|'STYLE')} [data.tab='content'] The tab that the field should appear
    * on in the content editor. It may either be "content" (default) or "style".
    * -------------------------------------------------------------------------------------
    * @param {string} [data.help_text] Text that will appear in the editor via tooltip to
@@ -35,7 +36,7 @@ export default class Group extends Field {
    * editor. If true, content will not be allowed to publish without filling out this field.
    * @param {Array} [data.visibility] Determines the display conditions for a field.
    */
-  constructor (data) {
+  constructor (data = {}) {
     super(data);
     this.label = data.label || 'Field group';
     this.children = data.children || [];
@@ -60,6 +61,11 @@ export default class Group extends Field {
      * snake case of the label provided. If no label is set, fall back to hardcoded value.
      */
     this.name = data.name || Util.toSnakeCase(this.label) || 'field_group';
+
+    this.path = this.name;
+    this.children?.forEach(child => {
+      child.path = this.name + '.' + child.path;
+    });
 
     /**
      * Make sure the tab value resolves to "CONTENT" or "STYLE", otherwise override

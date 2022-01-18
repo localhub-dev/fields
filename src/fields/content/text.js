@@ -56,5 +56,10 @@ export default class Text extends Field {
      * snake case of the label provided. If no label is set, fall back to hardcoded value.
      */
     this.name = data.name || Util.toSnakeCase(this.label) || 'text_field';
+
+    this.path = this.name;
+    this.children?.forEach(child => {
+      child.path = this.name + '.' + child.path;
+    });
   }
 }
